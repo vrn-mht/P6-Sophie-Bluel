@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./FrontEnd/assets/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,8 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="./assets/Js/index.js" defer></script>
-    <script src="./assets/Js/login.js" defer></script>
+    <script src="./FrontEnd/assets/Js/index.js" defer></script>
+    <script src="./FrontEnd/assets/Js/login.js" defer></script>
   </head>
   <body>
     <div class="modalContainer">
@@ -37,20 +37,20 @@
         <h3>Ajout photo</h3>
         <form class="form2ndModal">
           <div class="containerFile">
-              <span><i class="fa-regular fa-image"></i></span>
-              <label class="labelModal" for="file">+ Ajouter photo</label>
-              <input class="hidden" type="file" id="file" name="imageUrl">
-              <img src="#" alt="Aperçu de l'image" />
-              <p>jpg,png: 4mo max</p>
-            </div>
+            <span><i class="fa-regular fa-image"></i></span>
+            <label class="labelModal" for="file">+ Ajouter photo</label>
+            <input class="hidden" type="file" id="file" name="imageUrl" />
+            <img src="#" alt="Aperçu de l'image" />
+            <p>jpg,png: 4mo max</p>
+          </div>
           <label for="title">Titre</label>
           <input type="text" id="title" name="title" />
           <label for="category">Catégorie</label>
           <select name="categoryId" id="category">
-              <option></option>
+            <option></option>
           </select>
           <button class="button">Valider</button>
-        </form>      
+        </form>
       </div>
     </div>
     <div id="mode-edition" class="hidden">
@@ -63,8 +63,10 @@
         <ul>
           <li>projets</li>
           <li>contact</li>
-          <li> <a class="logout" href="./login.html">login</a></li>
-          <li><img src="./assets/icons/instagram.png" alt="Instagram" /></li>
+          <li><a class="logout" href="./FrontEnd/login.html">login</a></li>
+          <li>
+            <img src="./FrontEnd/assets/icons/instagram.png" alt="Instagram" />
+          </li>
         </ul>
       </nav>
     </header>
@@ -72,7 +74,7 @@
     <main>
       <section id="introduction">
         <figure>
-          <img src="./assets/images/sophie-bluel.png" alt="" />
+          <img src="./FrontEnd/assets/images/sophie-bluel.png" alt="" />
         </figure>
         <article>
           <h2>Designer d'espace</h2>
