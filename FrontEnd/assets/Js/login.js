@@ -368,15 +368,15 @@ async function deleteImages() {
           return;
         }
         // Supprimer l'image de la galerie
-        const galleryImage = document.querySelector(`img[data-id="${id}"]`); // Sélectionnez l'image dans la galerie par son identifiant
-        if (galleryImage) { // Vérifiez si l'image existe dans la galerie
-          galleryImage.parentNode.remove(); // Supprimez le conteneur de l'image de la galerie
+        const galleryImage = document.querySelector(`img[data-id="${id}"]`); // Pour selectionner l'image dans la galerie par son identifiant
+        if (galleryImage) { // Pour voir si l'image existe dans la galerie
+          galleryImage.parentNode.remove(); // Pour supprimer conteneur de l'image de la galerie
         }
 
         // Supprimer l'image de la modale
-        const modalImage = document.querySelector(`img[data-id="${id}"]`); // Sélectionnez l'image dans la modale par son identifiant
-        if (modalImage) { // Vérifiez si l'image existe dans la modale
-          modalImage.parentNode.remove(); // Supprimez le conteneur de l'image de la modale
+        const modalImage = document.querySelector(`img[data-id="${id}"]`); // Pour prendre  l'image dans la modale par son identifiant
+        if (modalImage) { // Pour verifier si l'image existe dans la modale
+          modalImage.parentNode.remove(); // Supprime le conteneur de l'image de la modale
         }
 
         // Réafficher toutes les images après suppression
