@@ -363,7 +363,7 @@ async function deleteImages() {
 
       try {
         const response = await fetch(`http://localhost:5678/api/works/${id}`, init);
-        if (!response.ok) { // Utilisez response.ok pour vérifier si la réponse est correcte
+        if (!response.ok) {
           console.log("La requête a échoué");
           return;
         }
