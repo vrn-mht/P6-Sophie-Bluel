@@ -42,7 +42,7 @@ window.addEventListener("pageshow", function (event) {
   checkLoginStatus();
 });
 
-// Création de la fonction de connexion
+/// Création de la fonction de connexion
 async function envoyerIdentifiants() {
   const formulaireIdentifiants = document.querySelector(".login-form");
 
@@ -74,13 +74,13 @@ async function envoyerIdentifiants() {
         });
 
         // Vérification de la réponse
-        if (response.status === 404) {
+        if (!response.ok) {
           // Affichage du message d'erreur en cas d'identifiants incorrects
           const passwordErr = document.querySelector(".passwordErr");
           if (passwordErr) {
-            passwordErr.textContent =
-              "Erreur dans l’identifiant ou le mot de passe.";
+            passwordErr.textContent = "Erreur dans l’identifiant ou le mot de passe.";
           }
+          return; // Arrête l'exécution de la fonction en cas d'erreur
         }
 
         // Si la réponse est réussie, extraction des données en JSON
@@ -97,6 +97,10 @@ async function envoyerIdentifiants() {
       } catch (error) {
         // Message en cas d'erreurs de requête ou de connexion
         console.error("Erreur lors de la requête d'authentification:", error);
+        const passwordErr = document.querySelector(".passwordErr");
+        if (passwordErr) {
+          passwordErr.textContent = "Une erreur est survenue lors de l'envoi de la requête.";
+        }
       } finally {
         // Vérifiez l'état de connexion une fois la requête terminée
         checkLoginStatus();
@@ -363,7 +367,7 @@ async function deleteImages() {
 
       try {
         const response = await fetch(`http://localhost:5678/api/works/${id}`, init);
-        if (!response.ok) { // Utilisez response.ok pour vérifier si la réponse est correcte
+        if (!response.ok) {
           console.log("La requête a échoué");
           return;
         }

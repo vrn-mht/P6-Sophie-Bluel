@@ -139,6 +139,7 @@ outline: none;
 	align-items: center;
 	height: 50px;
 	gap: 1%;
+	margin-bottom: 4%;
   }
   .filters button {
 	font-family: 'Syne';
@@ -260,7 +261,6 @@ footer nav ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	background-color: white;
 	box-sizing: border-box;
 	overflow: auto;
@@ -272,7 +272,8 @@ footer nav ul {
   font-weight: 400;
   font-size: 26px;
   text-align: center;
-  padding-bottom: 30px;
+  margin: 50px;
+  
 
 }
 .fa-xmark {
@@ -298,7 +299,6 @@ footer nav ul {
 	width: 73%;
     height: 59%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -345,7 +345,7 @@ footer nav ul {
 	align-items: center;
 	height: 75%;
 	width: 50%;
-	background-color: whitesmoke;
+	background-color: #fefefe;
 	border-radius: 5px;
 	position: relative; }
 	.modalAddImages .fa-arrow-left {
@@ -422,4 +422,14 @@ footer nav ul {
 		.button:focus {
 			color: white;
 			background-color: #1D6154;
+		}
+		h3{
+			font-family: 'Work Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			color: #000000;  
+		 }
+		.fa-regular{
+			padding-top: 1rem;
 		}
