@@ -254,8 +254,8 @@ footer nav ul {
   top: 0;
 }
 .imagesModal {
-	width: 630px;
-	height: 92%;
+	width: 45%;
+	height: 75%;
 	margin: 0;
 	position: relative;
 	display: flex;
@@ -299,7 +299,7 @@ footer nav ul {
 	width: 73%;
     height: 59%;
     display: flex;
-    align-items: center;
+	margin-top: -16px;
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -335,7 +335,7 @@ footer nav ul {
 	width:80%;
 	height: 0px;
 	border: 1px solid #B3B3B3;
-	bottom: 62px;
+	bottom: 59px;
 	position: absolute;
   }
   .modalAddImages{
@@ -344,7 +344,7 @@ footer nav ul {
 	flex-direction: column;
 	align-items: center;
 	height: 75%;
-	width: 50%;
+	width: 42%;
 	background-color: #fefefe;
 	border-radius: 5px;
 	position: relative; }
@@ -380,7 +380,7 @@ footer nav ul {
 		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 	  }
 	  .containerFile {
-		background-color:azure;
+		background-color:#e8f1f6;
 		height: 30%;
 		display: flex;
 		flex-direction: column;
@@ -432,4 +432,11 @@ footer nav ul {
 		 }
 		.fa-regular{
 			padding-top: 1rem;
+		}
+		.hrposition{
+			bottom: 14%;    
+			left: 10%;
+		}
+		.espacement{
+			margin: 15px
 		}
